@@ -18,6 +18,7 @@ $(document).ready(function (){
   far = (kel)*(9/5)-459.67;
   cel= kel-273;
 
+// make sure JSON is getting pulled
      console.log(city);
     $('#city').html(city);
     $('#typeOfWeather').html(typeOfWeather)
