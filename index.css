@@ -1,1 +1,30 @@
+body {
+  background-size: cover;
+}
+#local {
+  color: white;
+  
+}
 
+#far {
+  color: white;
+  text-align: center;
+  font-size: 50pt;
+}
+
+#typeOfWeather {
+  color: white;
+  text-align: center;
+  font-size: 30pt;
+}
+#city {
+  color: white;
+  text-align: center;
+  font-size: 20pt;
+}
+
+#wind {
+  color: white;
+  text-align: center;
+  font-size: 20pt;
+}

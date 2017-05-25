@@ -24,7 +24,7 @@ $(document).ready(function (){
     $('#typeOfWeather').html(typeOfWeather)
     $('#far').html(far + "&#8457");
     wind = (2.237*(wind)).toFixed(1)
-    $('#wind').html(wind + " mph");
+    $('#wind').html("Wind: " + wind + " mph");
           $('#far').click(function(){
         if(temp === false){
           $('#far').html(cel + "&#8451;")
@@ -38,11 +38,14 @@ $(document).ready(function (){
     if(far>70){
       $('body').css(  'background-image', 'url(https://cdn.pixabay.com/photo/2016/12/17/19/24/weather-1914182_1280.jpg)');
     }
-    else if(far>60 && far<70) {
-      $('body').css(  'background-image', 'url(https://www.nps.gov/common/uploads/stories/images/nri/20150202/articles/022434C1-F9EC-A94E-0D43FF1D055221DB/022434C1-F9EC-A94E-0D43FF1D055221DB.jpg)');
+    else if(far<70 && far>60) {
+      $('body').css(  'background-image', 'url(https://c2.staticflickr.com/6/5274/5810163712_ac8a7f249e_b.jpg)');
     }
-    else if(far>50 && far<60){
-      $('body').css(  'background-image', 'url(https://images.pexels.com/photos/28621/pexels-photo-28621.jpg?w=940&h=650&auto=compress&cs=tinysrgb)');
+    else if(far<60 && far>40){
+      $('body').css(  'background-image', 'url(https://cdn.pixabay.com/photo/2014/01/10/17/48/leaves-241701_960_720.jpg)');
+    }
+    else {
+       $('body').css(  'background-image', 'url(http://www.samanthalienhard.com/wp-content/uploads/2013/11/DSCF9037.jpg)');
     }
   })
 
