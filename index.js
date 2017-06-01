@@ -36,7 +36,7 @@ $(document).ready(function (){
         }
       });
     if(typeOfWeather === "clear sky"){
-      $('body').css(  'background-image', 'url(https://cdn.pixabay.com/photo/2016/12/17/19/24/weather-1914182_1280.jpg)');
+      $('body').css(  'background-image', 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTURNlGchsvJZEFDq2AQ16Ttk78w1lBUyXemdMyiTdsdhRo93eaNA)');
     }
     else if(far<70 && far>60) {
       $('body').css(  'background-image', 'url(https://c2.staticflickr.com/6/5274/5810163712_ac8a7f249e_b.jpg)');
