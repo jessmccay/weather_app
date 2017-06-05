@@ -35,21 +35,26 @@ $(document).ready(function (){
           temp = false;
         }
       });
-    if(typeOfWeather === "clear sky"){
-      $('body').css(  'background-image', 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTURNlGchsvJZEFDq2AQ16Ttk78w1lBUyXemdMyiTdsdhRo93eaNA)');
-    }
-    else if(far<70 && far>60) {
-      $('body').css(  'background-image', 'url(https://c2.staticflickr.com/6/5274/5810163712_ac8a7f249e_b.jpg)');
-    }
-    else if(typeOfWeather === "few clouds"){
+      if(far>70){
+        if(typeOfWeather === "clear sky"){
+          $('body').css(  'background-image', 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTURNlGchsvJZEFDq2AQ16Ttk78w1lBUyXemdMyiTdsdhRo93eaNA)');
+        }
+        else if (typeOfWeather === "few clouds"){
+          $('body').css(  'background-image', 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRetKEQcauXLHx9pxB0PZWgHFHeNjzTo4WeGcnSOZcXZ-N2kRkn)');
+        }
+      }
+      else if(far<70 && far>60) {
         $('body').css(  'background-image', 'url(https://c2.staticflickr.com/6/5274/5810163712_ac8a7f249e_b.jpg)');
-    }
-    else if(far<60 && far>40){
-      $('body').css(  'background-image', 'url(https://cdn.pixabay.com/photo/2014/01/10/17/48/leaves-241701_960_720.jpg)');
-    }
-    else {
-       $('body').css(  'background-image', 'url(http://www.samanthalienhard.com/wp-content/uploads/2013/11/DSCF9037.jpg)');
-    }
+      }
+      else if(typeOfWeather === "few clouds"){
+          $('body').css(  'background-image', 'url(https://c2.staticflickr.com/6/5274/5810163712_ac8a7f249e_b.jpg)');
+      }
+      else if(far<60 && far>40){
+        $('body').css(  'background-image', 'url(https://cdn.pixabay.com/photo/2014/01/10/17/48/leaves-241701_960_720.jpg)');
+      }
+      else {
+         $('body').css(  'background-image', 'url(http://www.samanthalienhard.com/wp-content/uploads/2013/11/DSCF9037.jpg)');
+      }
   })
 
   // $('#data').html("latitude: " + lat + "<br>longitude: " + long);
